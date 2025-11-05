@@ -3,47 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Calculator!</h1>
-    <div class="calc-container">
-      <div class="calc-outline">
-        <div class="screen-container">
-          <div id="screen">0</div>
+    <div class="calculatorContainer">
+      <div class="display"></div>
+
+      <div class="buttonContainer">
+        <div class="firstRow">
+          <button id="clearBtn">C</button>
+          <button class="operatorBtn" id="addBtn">+</button>
+          <button class="operatorBtn" id="substractBtn">-</button>
+          <button id="backspaceBtn">Del</button>
         </div>
-        <div class="buttons-container">
-          <div class="button-line-one">
-            <button>C</button>
-          </div>
-          <div class="button-line-two button-line">
-            <button id="button-one">1</button>
-            <button id="button-two">2</button>
-            <button id="button-three">3</button>
-            <button id="button-divide">/</button>
-          </div>
-          <div class="button-line-three button-line">
-            <button id="button-four">4</button>
-            <button id="button-five">5</button>
-            <button id="button-six">6</button>
-            <button id="button-multiply">x</button>
-          </div>
-          <div class="button-line-four button-line">
-            <button id="button-seven">7</button>
-            <button id="button-eight">8</button>
-            <button id="button-nine">9</button>
-            <button id="button-minus">-</button>
-          </div>
-          <div class="button-line-five button-line">
-            <button id="button-decimal">.</button>
-            <button id="button-zero">0</button>
-            <button id="button-equals">=</button>
-            <button id="button-plus">+</button>
-          </div>
+        <div class="secondRow">
+          <button class="numberBtn">7</button>
+          <button class="numberBtn">8</button>
+          <button class="numberBtn">9</button>
+          <button class="operatorBtn" id="multiplyBtn">*</button>
+        </div>
+        <div class="thirdRow">
+          <button class="numberBtn">4</button>
+          <button class="numberBtn">5</button>
+          <button class="numberBtn">6</button>
+          <button class="operatorBtn" id="divideBtn">/</button>
+        </div>
+        <div class="fourthRow">
+          <button class="numberBtn">1</button>
+          <button class="numberBtn">2</button>
+          <button class="numberBtn">3</button>
+        </div>
+        <div class="fifthRow">
+          <button class="operatorBtn" id="expBtn">^</button>
+          <button class="numberBtn">0</button>
+          <button>.</button>
+          <button id="equalsBtn" style="color: white; background-color: green">
+            =
+          </button>
         </div>
       </div>
     </div>
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
